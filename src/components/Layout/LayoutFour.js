@@ -1,5 +1,5 @@
 import Head from "next/head";
-
+import FooterOne from "../Footer/FooterOne";
 
 export default function LayoutFour(props) {
   return (
@@ -9,7 +9,7 @@ export default function LayoutFour(props) {
       </Head>
       {/* <ScrollFixedHeader container={props.container} /> */}
       {props.children}
-      {/* <FooterOne /> */}
+      <FooterOne />
     </>
   );
 }

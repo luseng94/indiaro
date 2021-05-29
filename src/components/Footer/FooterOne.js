@@ -10,7 +10,7 @@ export default function FooterOne() {
     <div className="footer-one">
       <div className="container">
         <div className="footer-one__header">
-          <div className="footer-one__header__logo">
+          {/* <div className="footer-one__header__logo">
             <Link href={process.env.PUBLIC_URL + "/homepages/homepage1"}>
               <a>
                 <img
@@ -28,47 +28,33 @@ export default function FooterOne() {
               btnContent={<i className="fas fa-paper-plane" />}
               className="footer-one-newsletter"
             />
-          </div>
-          <div className="footer-one__header__social">
+          </div> */}
+          {/* <div className="footer-one__header__social">
             <SocialIcons className="-border" />
-          </div>
+          </div> */}
         </div>
         <div className="footer-one__body">
           <div className="row">
             <div className="col-12 col-md-6 col-lg-4">
               <div className="footer__section -info">
-                <h5 className="footer-title">Contact info</h5>
+                <h5 className="footer-title">Return and Refund Policy</h5>
                 <p>
-                  Address: <span>{footerInfomation.address}</span>
+                [Online Store] cannot accept exchanges or returns at this time. We apologize for any inconvenience
                 </p>
-                <p>
-                  Phone: <span>{footerInfomation.phone}</span>
-                </p>
-                <p>
-                  Email: <span>{footerInfomation.email}</span>
-                </p>
-                <p>
-                  Opentime: <span>{footerInfomation.open}</span>
-                </p>
+                
               </div>
             </div>
             <div className="col-12 col-md-6 col-lg-4">
               <div className="footer__section -links">
                 <div className="row">
                   <div className="col-12 col-sm-6">
-                    <h5 className="footer-title">Account</h5>
-                    <ul>
-                      {footerLinks.accountLinks.map((link, index) => (
-                        <li key={index}>
-                          <Link href={link.to}>
-                            <a>{link.name}</a>
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
+                    <h5 className="footer-title">Shipping & Taxes</h5>
+                    <p>
+                No Shipping Fee
+                </p>
                   </div>
-                  <div className="col-12 col-sm-6">
-                    <h5 className="footer-title">Infomation</h5>
+                  {/* <div className="col-12 col-sm-6">
+                    <h5 className="footer-title">Return and Refund Policy</h5>
                     <ul>
                       {footerLinks.informationLinks.map((link, index) => (
                         <li key={index}>
@@ -78,17 +64,17 @@ export default function FooterOne() {
                         </li>
                       ))}
                     </ul>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
             <div className="col-12 col-lg-4">
               <div className="footer__section -payment">
                 <h5 className="footer-title">Payment methods</h5>
-                <p>
+                {/* <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit
                   gravida facilisis.{" "}
-                </p>
+                </p> */}
                 <div className="payment-methods">
                   <img
                     src={
@@ -103,7 +89,7 @@ export default function FooterOne() {
           </div>
         </div>
       </div>
-      <div className="footer-one__footer">
+      {/* <div className="footer-one__footer">
         <div className="container">
           <div className="footer-one__footer__wrapper">
             <p>© Copyright 2020 Beauty</p>
@@ -118,7 +104,7 @@ export default function FooterOne() {
             </ul>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
